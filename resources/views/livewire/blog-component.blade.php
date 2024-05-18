@@ -1,0 +1,23 @@
+<!-- blog -->
+<section class="blogs" id="blogs" style="padding:3rem 7%;">
+
+    <h1 class="heading"> our <span>blogs</span> </h1>
+
+    <div class="box-container">
+        @foreach ($blogs as $blog)
+            <div class="box">
+                <div class="image">
+                    <img src="{{ asset('assets/images/blogs')}}/{{$blog->image}}" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">{{ $blog->name }}</a>
+                    <span>{{ $blog->created_at}}</span>
+                    <p>{{ $blog->short_description}}</p>
+                    <a href="#" class="btn fs-3">read more</a>
+                </div>
+            </div>
+        @endforeach
+    </div>
+
+</section>
+<!-- end of blog -->
