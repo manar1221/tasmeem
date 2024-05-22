@@ -29,24 +29,24 @@
 </head>
 <body>
     <header class="header">
-            <a href="#" class="logo"><img src="{{asset('assets/images/TASMEEM-03.png')}}" alt=""></a>
+            <a href="/" class="logo"><img src="{{asset('assets/images/TASMEEM-03.png')}}" alt=""></a>
             <div class="fas fa-bars"></div>
             <nav class="navbar">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="{{route('store')}}">Store</a></li>
-                    <li><a href="{{route('gallery')}}">Gallery</a></li>
-                    <li><a href="{{route('blog')}}">blog</a></li>
-                    <li><a href="{{route('cources')}}">cources</a></li>
+                    <li><a href="/">{{__('mycustom.home')}}</a></li>
+                    <li><a href="{{route('store')}}">{{__('mycustom.shop')}}</a></li>
+                    <li><a href="{{route('gallery')}}">{{__('mycustom.Gallery')}}</a></li>
+                    <li><a href="{{route('blog')}}">{{__('mycustom.blogs')}}</a></li>
+                    <li><a href="{{route('cources')}}">{{__('mycustom.cources')}}</a></li>
                     @auth
                         @if(Auth::user()->utype == 'ADM')
                             <li class="dropdown">
-                                <a href="#" class="dropbtn">Admin</a>
+                                <a href="#" class="dropbtn">{{__('mycustom.Admin')}}</a>
                                 <div class="dropdown-content">
-                                    <a href="{{route('admin.categories')}}"> Category </a>
-                                    <a href="{{route('admin.products')}}"> Product </a>
-                                    <a href="{{route('admin.blogs')}}"> Blog </a>
-                                    <a href="{{route('admin.courses')}}"> Cource </a>
+                                    <a href="{{route('admin.categories')}}"> {{__('mycustom.categories')}} </a>
+                                    <a href="{{route('admin.products')}}"> {{__('mycustom.products')}} </a>
+                                    <a href="{{route('admin.blogs')}}"> {{__('mycustom.blogs')}} </a>
+                                    <a href="{{route('admin.courses')}}"> {{__('mycustom.cources')}} </a>
                                 </div>
                             </li>
                         @endif
@@ -54,13 +54,13 @@
                         <li>
                             <form method="POST" action="{{route('logout')}}">
                                 @csrf
-                                <a href="{{route('logout')}}" onclick="event.preventDefault(); this.closest('form').submit();"> Log Out </a>
+                                <a href="{{route('logout')}}" onclick="event.preventDefault(); this.closest('form').submit();"> {{__('mycustom.logout')}} </a>
                             </form>
                         </li>
 
                     @else
                         <li>
-                            <a href="{{route('login')}}"> Log In </a>
+                            <a href="{{route('login')}}"> {{__('mycustom.login')}} </a>
                         </li>
                     @endif
                     @if(session()->has('locale') && session()->get('locale') === 'ar')
@@ -85,26 +85,26 @@
                 <div class="row">
 
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>About Us</h4>
+                        <h4>{{__('mycustom.Aboutus')}}</h4>
                         <ul>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="#portfolio">Portfolio</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="#team">price plans</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="#contact">Contact</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="#faq">FAQ</a></li>
+                            <li><i class="ion-ios-arrow-forward"></i> <a href="#portfolio">{{__('mycustom.Portfolio')}}</a></li>
+                            <li><i class="ion-ios-arrow-forward"></i> <a href="#team">{{__('mycustom.Aboutus')}}</a></li>
+                            <li><i class="ion-ios-arrow-forward"></i> <a href="#contact">{{__('mycustom.ContactUs')}}</a></li>
+                            <li><i class="ion-ios-arrow-forward"></i> <a href="#faq">{{__('mycustom.FAQ')}}</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
-                      <h4>Useful Links</h4>
+                      <h4>{{__('mycustom.UsefulLinks')}}</h4>
                       <ul>
-                          <li><i class="ion-ios-arrow-forward"></i> <a href="#">Home</a></li>
-                          <li><i class="ion-ios-arrow-forward"></i> <a href="#about">About us</a></li>
-                          <li><i class="ion-ios-arrow-forward"></i> <a href="#service">Our services</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="#">{{__('mycustom.home')}}</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="#about">{{__('mycustom.Aboutus')}}</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="#service">{{__('mycustom.Ourservices')}}</a></li>
                       </ul>
                   </div>
 
                     <div class="col-lg-3 col-md-6 footer-contact" style="font-size: 1.5rem;">
-                        <h4>Contact Us</h4>
+                        <h4>{{__('mycustom.ContactUs')}}</h4>
                         <p>
                             HELWAN,<br>
                             Cairo,<br>

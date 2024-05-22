@@ -3,8 +3,8 @@
        <div class="container-xxl py-5 category" style="padding:3rem; margin-top: 10rem;">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center fs-3 px-3 fw-bold" style="color: #6A187E;">Categories</h6>
-                <h1 class="mb-5">Courses Categories</h1>
+                <h6 class="section-title bg-white text-center fs-3 px-3 fw-bold" style="color: #6A187E;">{{__('mycustom.categories')}}</h6>
+                <h1 class="mb-5">{{__('mycustom.CoursesCategories')}}</h1>
             </div>
             <div class="row g-3">
                 <div class="col-lg-7 col-md-6">
@@ -13,7 +13,7 @@
                             <a class="position-relative d-block overflow-hidden" href="">
                                 <img class="img-fluid" src="{{asset('assets/images/11.jpg')}}" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Web Design</h5>
+                                    <h5 class="m-0">{{__('mycustom.WebDesign')}}</h5>
                                         </div>
                             </a>
                         </div>
@@ -21,7 +21,7 @@
                             <a class="position-relative d-block overflow-hidden" href="">
                                 <img class="img-fluid" src="{{asset('assets/images/222.jpg')}}" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Graphic Design</h5>
+                                    <h5 class="m-0">{{__('mycustom.GraphicDesign')}}</h5>
                                         </div>
                             </a>
                         </div>
@@ -29,7 +29,7 @@
                             <a class="position-relative d-block overflow-hidden" href="">
                                 <img class="img-fluid" src="{{asset('assets/images/5.jpg')}}" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Video Editing</h5>
+                                    <h5 class="m-0">{{__('mycustom.VideoEditing')}}</h5>
                                         </div>
                             </a>
                         </div>
@@ -39,7 +39,7 @@
                     <a class="position-relative d-block h-100 overflow-hidden" href="">
                         <img class="img-fluid position-absolute w-100 h-100" src="{{asset('assets/images/2.jpg')}}" alt="" style="object-fit: cover;">
                         <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
-                            <h5 class="m-0">Online Marketing</h5>
+                            <h5 class="m-0">{{__('mycustom.OnlineMarketing')}}</h5>
                         </div>
                     </a>
                 </div>
@@ -52,8 +52,8 @@
     <div class="container-xxl py-5 mb-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center fs-3 px-3 fw-bold" style="color: #6A187E;">Courses</h6>
-                <h1 class="mb-5">Popular Courses</h1>
+                <h6 class="section-title bg-white text-center fs-3 px-3 fw-bold" style="color: #6A187E;">{{__('mycustom.cources')}}</h6>
+                <h1 class="mb-5">{{__('mycustom.PopularCourses')}}</h1>
             </div>
             <div class="row g-4 justify-content-center">
                 @foreach ($courses as $course)

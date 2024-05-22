@@ -15,10 +15,16 @@ use App\Http\Livewire\Admin\AdminProductComponent;
 use App\Http\Livewire\AdminComponent;
 use App\Http\Livewire\BlogComponent;
 use App\Http\Livewire\BolgComponent;
+use App\Http\Livewire\BrandingComponent;
 use App\Http\Livewire\CourcesComponent;
 use App\Http\Livewire\GalleryComponent;
 use App\Http\Livewire\HomeComponent;
+use App\Http\Livewire\LogoComponent;
+use App\Http\Livewire\MobileComponent;
+use App\Http\Livewire\PublicationsComponent;
+use App\Http\Livewire\SocialComponent;
 use App\Http\Livewire\StoreComponent;
+use App\Http\Livewire\WebComponent;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -50,17 +56,27 @@ Route::get('languageConverter/{locale}',function($locale){
 })->name('languageConverter');
 
 
+Route::get('/', HomeComponent::class )->name('home.index');
+
+Route::get('/store', StoreComponent::class )->name('store');
+
+Route::get('/gallery', GalleryComponent::class )->name('gallery');
+
+Route::get('/blog', BlogComponent::class )->name('blog');
+
+Route::get('/cources', CourcesComponent::class )->name('cources');
+
+
+Route::get('/logo', LogoComponent::class )->name('logo');
+Route::get('/social', SocialComponent::class )->name('social');
+Route::get('/branding', BrandingComponent::class )->name('branding');
+Route::get('/publications', PublicationsComponent::class )->name('publications');
+Route::get('/web', WebComponent::class )->name('web');
+Route::get('/mobile', MobileComponent::class )->name('mobile');
+
 
 Route::middleware('auth')->group(function () {
-    Route::get('/', HomeComponent::class )->name('home.index');
 
-    Route::get('/store', StoreComponent::class )->name('store');
-
-    Route::get('/gallery', GalleryComponent::class )->name('gallery');
-
-    Route::get('/blog', BlogComponent::class )->name('blog');
-
-    Route::get('/cources', CourcesComponent::class )->name('cources');
 });
 
 Route::middleware('auth','authadmin')->group(function () {

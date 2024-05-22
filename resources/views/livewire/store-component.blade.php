@@ -2,7 +2,7 @@
 <section id = "collection" class = "py-5" style="margin-top: 100px;">
     <div class = "container">
         <div class = "title text-center">
-            <h2 class = "position-relative d-inline-block ">Shop</h2>
+            <h2 class = "position-relative d-inline-block ">{{__('mycustom.shop')}}</h2>
         </div>
 
         <div class = "row g-0">

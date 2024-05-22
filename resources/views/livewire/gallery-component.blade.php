@@ -1,6 +1,6 @@
 <section id="home" class="home">
     <section class="gallery" style="margin-top: 6rem">
-      <h1 class="heading" style="margin-top: -1.5rem" id="team">Gallery</h1>
+      <h1 class="heading" style="margin-top: -1.5rem" id="team">{{__('mycustom.Gallery')}}</h1>
       <!-- Inner -->
       <div class="">
         <!-- Single item -->
@@ -15,12 +15,12 @@
                     alt="Waterfall"
                   />
                   <div class="card-body">
-                    <h5 class="card-title fw-bold fs-4"> Logo </h5>
+                    <h5 class="card-title fw-bold fs-4"> {{__('mycustom.Logo')}} </h5>
                     <!-- <p class="card-text fs-4 fs-4">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p> -->
-                    <a href="logo.html" class="btn"> Show </a>
+                    <a href="{{route('logo')}}" class="btn"> {{__('mycustom.show')}} </a>
                   </div>
                 </div>
               </div>
@@ -33,12 +33,12 @@
                     alt="Sunset Over the Sea"
                   />
                   <div class="card-body">
-                    <h5 class="card-title fw-bold fs-4"> Social Media </h5>
+                    <h5 class="card-title fw-bold fs-4"> {{__('mycustom.SocialMedia')}} </h5>
                     <!-- <p class="card-text fs-4 fs-4">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p> -->
-                    <a href="socialmedia.html" class="btn"> Show </a>
+                    <a href="{{route('social')}}" class="btn"> {{__('mycustom.show')}} </a>
                   </div>
                 </div>
               </div>
@@ -51,12 +51,12 @@
                     alt="Sunset over the Sea"
                   />
                   <div class="card-body">
-                    <h5 class="card-title fw-bold fs-4"> Branding </h5>
+                    <h5 class="card-title fw-bold fs-4"> {{__('mycustom.Branding')}} </h5>
                     <!-- <p class="card-text fs-4 fs-4">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p> -->
-                    <a href="pranding.html" class="btn"> Show </a>
+                    <a href="{{route('branding')}}" class="btn"> {{__('mycustom.show')}} </a>
                   </div>
                 </div>
               </div>
@@ -76,12 +76,12 @@
                     alt="Fissure in Sandstone"
                   />
                   <div class="card-body">
-                    <h5 class="card-title fw-bold fs-4"> Publications </h5>
+                    <h5 class="card-title fw-bold fs-4"> {{__('mycustom.Publications')}} </h5>
                     <!-- <p class="card-text fs-4">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p> -->
-                    <a href="publications.html" class="btn"> Show </a>
+                    <a href="{{route('publications')}}" class="btn"> {{__('mycustom.show')}} </a>
                   </div>
                 </div>
               </div>
@@ -94,12 +94,12 @@
                     alt="Storm Clouds"
                   />
                   <div class="card-body">
-                    <h5 class="card-title fw-bold fs-4"> Websites </h5>
+                    <h5 class="card-title fw-bold fs-4"> {{__('mycustom.Websites')}} </h5>
                     <!-- <p class="card-text fs-4">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p> -->
-                    <a href="websites.html" class="btn"> Show </a>
+                    <a href="{{route('web')}}" class="btn"> {{__('mycustom.show')}} </a>
                   </div>
                 </div>
               </div>
@@ -112,12 +112,12 @@
                     alt=""
                   />
                   <div class="card-body">
-                    <h5 class="card-title fw-bold fs-4"> Mobile Apps </h5>
+                    <h5 class="card-title fw-bold fs-4"> {{__('mycustom.MobileApps')}} </h5>
                     <!-- <p class="card-text fs-4">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p> -->
-                    <a href="mobileapps.html" class="btn"> Show </a>
+                    <a href="{{route('mobile')}}" class="btn"> {{__('mycustom.show')}} </a>
                   </div>
                 </div>
               </div>

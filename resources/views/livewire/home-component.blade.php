@@ -1,20 +1,20 @@
 <div>
     <section id="home" class="home">
-        <h1>Bring your Business Online</h1>
-        <h2>with TASMIM Company Services</h2>
+        <h1>{{__('mycustom.welcome1')}}</h1>
+        <h2>{{__('mycustom.welcome2')}}</h2>
       <div class="wave wave1"></div>
       <div class="wave wave2"></div>
       <div class="wave wave3"></div>
     </section>
 
     <section id="about" class="about">
-      <h1 class="heading">about us {{__('mycustom.welcome')}}</h1>
+      <h1 class="heading">{{__('mycustom.Aboutus')}}</h1>
       <div class="row">
           <div class="content">
-              <h3>We make creativity work for your brand!</h3>
-              <p>Ours is a team of creatives that is brainstorming on great ideas,<b> all. the. time.</b><br>
-                  With our skills put together, you get an ensemble capable of doing anything and everything your brand needs.</p>
-              <a href="#paragraph"><button class="btn">Read More</button></a>
+              <h3>{{__('mycustom.about1')}}</h3>
+              <p>{{__('mycustom.about2')}}</b><br>
+                {{__('mycustom.about3')}}</p>
+              <a href="#paragraph"><button class="btn">{{__('mycustom.readmore')}}</button></a>
           </div>
       </div>
     </section>
@@ -23,21 +23,19 @@
       <div class="container">
         <div class="row">
           <div class="section-head col-sm-12" id="service">
-            <h1>Our Services</h1>
-            <p>We help you to build high-quality digital solutions and products as well as deliver a wide range of related professional services. We are providing world-class service to our clients.
-              </p>
+            <h1>{{__('mycustom.Ourservices')}}</h1>
+            <p>{{__('mycustom.Ourservices1')}}</p>
           </div>
           <div class="col-lg-4 col-sm-6 anim">
             <div class="item">
               <div class="image card">
                   <img src="{{asset('assets/images/تصميم-فيديو-موشن-جرافيك-منتجات 1.png')}}">
                   </div>
-              <h6>Motion graphics services</h6>
-              <p>
-                  Marketing motion graphic video.<br>
-                  Motion graphic introductory video.<br>
-                  Motion graphic educational video.<br>
-                  Infographic video.</p>
+              <h6>{{__('mycustom.motion1')}}</h6>
+              <p>{{__('mycustom.motion2')}} <br>
+                {{__('mycustom.motion3')}} <br>
+                {{__('mycustom.motion4')}} <br>
+                {{__('mycustom.motion5')}} </p>
             </div>
           </div>
 
@@ -46,12 +44,12 @@
                 <div class="image card">
                     <img src="{{asset('assets/images/تصميم-موقع-الكتروني.webp')}}">
                     </div>
-                <h6>Web and Applications design services</h6>
+                <h6>{{__('mycustom.web1')}}</h6>
                 <p>
-                    Website design.<br>
-                    Design of electronic stores.<br>
-                    Mobile applications design.<br>
-                    Search Engine Optimization
+                   {{__('mycustom.web2')}}<br>
+                   {{__('mycustom.web3')}}<br>
+                   {{__('mycustom.web4')}}<br>
+                   {{__('mycustom.web5')}}
                 </p>
               </div>
             </div>
@@ -60,12 +58,12 @@
               <div class="image card">
                   <img src="{{asset('assets/images/تصميم-مواقع-الكترونية_.webp')}}">
                   </div>
-              <h6>Creative content services</h6>
+              <h6>{{__('mycustom.services1')}} </h6>
               <p>
-                  Writing content for motion graphic video.<br>
-                  Writing the content of profiles.<br>
-                  The content of social networking platforms.<br>
-                  Creating the content of advertising campaigns
+                  {{__('mycustom.services2')}}<br>
+                  {{__('mycustom.services3')}}<br>
+                  {{__('mycustom.services4')}}<br>
+                  {{__('mycustom.services5')}}
               </p>
             </div>
           </div>
@@ -75,16 +73,8 @@
                 <div class="image card">
                     <img src="{{asset('assets/images/ادارة-حسابات-السوشيال-منتجات.webp')}}">
                     </div>
-                <h6>Managing social media accounts</h6>
-                <p>Platform management
-                  Publications management
-                  Content design
-                  Content writing
-                  - Respond to the content
-                  - Respond to messages
-                  Weekly reports
-                  Sponsored advertising management
-                  Video design
+                <h6>{{__('mycustom.social1')}}</h6>
+                <p>{{__('mycustom.social2')}}
               </p>
           </div>
           </div>
@@ -93,12 +83,12 @@
                 <div class="image card">
                     <img src="{{asset('assets/images/تصميم-الهوية-التجارية.webp')}}">
                     </div>
-                <h6>Graphic design services</h6>
-                <p>Designing logos and visual identities.<br>
-                  Advertising campaigns and social media designs.<br>
-                    Packaging products and packages.<br>
-                  Profiles, reports and brochures.<br>
-                  Presentations and infographics</p>
+                <h6>{{__('mycustom.graphic1')}}</h6>
+                <p>{{__('mycustom.graphic2')}}<br>
+                   {{__('mycustom.graphic3')}}<br>
+                   {{__('mycustom.graphic4')}}<br>
+                   {{__('mycustom.graphic5')}}<br>
+                   {{__('mycustom.graphic6')}}</p>
               </div>
             </div>
       </div>
@@ -133,9 +123,9 @@
       <div class="container">
         <div class="row">
           <div class="section-head-1 col-sm-12" style="text-align: center;">
-            <h4 style="margin-top: -5rem;" id="portfolio"><span>Our</span> Projects</h4>
+            <h4 style="margin-top: -5rem;" id="portfolio">{{__('mycustom.OurProjects')}}</h4>
 
-            <p>We seek to share a unique experience in solutions to endeavours, as we aspire to raise the standards of entrepreneurs, and help them build their famous brand, believing in the power of their ideas, and the limited effort we keep pace with development, to consolidate trust with our partners. In success and the formation of new partnerships permanently
+            <p>{{__('mycustom.OurProjects1')}}
               </p>
           </div>
 
@@ -145,7 +135,7 @@
                 <div class="image card">
                   <img src="{{asset('assets/images/logo.jpeg')}}">
                 </div>
-                <h6>bezrt eltanmia</h6>
+                <h6>{{__('mycustom.bezrteltanmia')}}</h6>
               </div>
             </a>
             </div>
@@ -156,7 +146,7 @@
                 <div class="image card">
                 <img src="{{asset('assets/images/final edit logo art space-02.jpg')}}">
                 </div>
-                <h6>ART Space</h6>
+                <h6>{{__('mycustom.ARTSpace')}}</h6>
               </div>
             </a>
             </div>
@@ -166,7 +156,7 @@
                 <div class="image card">
                 <img src="{{asset('assets/images/logotas2.jpg')}}" style="height: 220px;">
                 </div>
-                <h6> Helwan Store </h6>
+                <h6> {{__('mycustom.HelwanStore')}} </h6>
               </div>
             </a>
             </div>
@@ -175,7 +165,7 @@
                 <div class="image card">
                 <img src="{{asset('assets/images/smart.jpg')}}" style="height:185px;">
                 </div>
-                <h6>Smart solutions</h6>
+                <h6>{{__('mycustom.Smartsolutions')}}</h6>
               </div>
             </div>
         </div>
@@ -184,14 +174,14 @@
 
     <section id="paragraph">
         <div class="communicate">
-        <h3>The strength of our designs is based on understanding the customer's vision and converting it into an image that reaches the business and provides his percentage of sales.</h3>
-        <p>The design conveys a message, and the design also leaves a very important impression about your company as being efficient and quality, and the aesthetic sense in the design can increase your sales. It has proven that the beautiful environment or the way you package the product is a decisive factor in the repeated purchase of the product..</p>
-        <a href="#contact"><button class="btn">Contact Now</button></a>
+        <h3>{{__('mycustom.ContactUs1')}}</h3>
+        <p>{{__('mycustom.ContactUs2')}}</p>
+        <a href="#contact"><button class="btn">{{__('mycustom.ContactUs')}}</button></a>
         </div>
     </section>
 
     <section class="team" style="margin-top: 7rem;">
-      <h1 class="heading" style="margin-top: -1.5rem;" id="team">price plans</h1>
+      <h1 class="heading" style="margin-top: -1.5rem;" id="team">{{__('mycustom.priceplans')}}</h1>
       <p></p>
       <div class="row">
           <div class="card">
@@ -199,9 +189,9 @@
                   <img src="{{asset('assets/images/ادارة-حسابات-السوشيال-منتجات.webp')}}">
               </div>
               <div class="info">
-                  <h3><span>Social Media</span></h3>
+                  <h3><span>{{__('mycustom.SocialMedia')}}</span></h3>
                   <div>
-                    <a href="socialEng.html"><button class="btn">Show Details</button></a>
+                    <a href="socialEng.html"><button class="btn">{{__('mycustom.show')}}</button></a>
                   </div>
               </div>
           </div>
@@ -212,9 +202,9 @@
                     <img src="{{asset('assets/images/تصميم-مواقع-الكترونية_.webp')}}">
                 </div>
                 <div class="info">
-                    <h3><span>Websites</span></h3>
+                    <h3><span>{{__('mycustom.Websites')}}</span></h3>
                     <div>
-                    <a href="webEng.html"><button class="btn">Show Details</button></a>
+                    <a href="webEng.html"><button class="btn">{{__('mycustom.show')}}</button></a>
                     </div>
                 </div>
             </div>
@@ -225,9 +215,9 @@
                     <img src="{{asset('assets/images/تصميم-فيديو-موشن-جرافيك-منتجات 1.png')}}">
                 </div>
                 <div class="info">
-                    <h3><span>Motion Graphic Videos</span></h3>
+                    <h3><span>{{__('mycustom.MotionGraphicVideos')}}</span></h3>
                     <div>
-                    <a href="motionEng.html"><button class="btn">Show Details</button></a>
+                    <a href="motionEng.html"><button class="btn">{{__('mycustom.show')}}</button></a>
                     </div>
                 </div>
             </div>
@@ -235,7 +225,7 @@
     </section>
 
     <section id="contact" class="contact">
-      <h1 class="heading">get in touch</h1>
+      <h1 class="heading">{{__('mycustom.getintouch')}}</h1>
     </section>
     <div class="contact-in">
         <div class="contact-map">
@@ -243,7 +233,7 @@
         </div>
         <div class="contact-form">
             <div class="col-lg-6 col-md-6 footer-contact" style="font-size: 1.5rem;">
-                <h1>Contact Us</h1>
+                <h1>{{__('mycustom.ContactUs')}}</h1>
                 <p>
                     <br>
                     <strong>Phone:</strong> +201110487092<br><br>
@@ -269,54 +259,46 @@
                 <div class="accordion">
                     <div class="accordion-header">
                         <span>+</span>
-                        <h3>How much will it cost?</h3>
+                        <h3>{{__('mycustom.faq1')}}</h3>
                     </div>
                     <div class="accordion-body">
-                        <p>To get a better idea of the cost of what you want to build, give us a quick phone call. We’ll ask you a few questions about the nature of the site, what sort of interactivity the site will have, your graphic design needs, etc.
-                            Then we’ll be able to give you a ballpark figure.
-                            If you’re still interested, we’ll come to your place of business and come up with a firm quote.</p>
+                        <p>{{__('mycustom.faq11')}}</p>
                     </div>
                 </div>
                 <div class="accordion">
                     <div class="accordion-header">
                         <span>+</span>
-                        <h3>How long it takes to design?</h3>
+                        <h3>{{__('mycustom.faq2')}}</h3>
                     </div>
                     <div class="accordion-body">
-                        <p>The time limit of any assignment is normally dictated by the client. If you have any time limit in mind we will attempt to assemble it for you.
-                            The main general delay in the making of a website is waiting for the content of the pages to be sent to us by the client.</p>
+                        <p>{{__('mycustom.faq22')}}</p>
                     </div>
                 </div>
                 <div class="accordion">
                     <div class="accordion-header">
                         <span>+</span>
-                        <h3>How do I associate with TASMIM Company?</h3>
+                        <h3>{{__('mycustom.faq3')}}</h3>
                     </div>
                     <div class="accordion-body">
-                        <p>The process begins when you contact us with your requirements. We analyze your requirements and respond to you.
-                            On the basis of the further discussion, you can choose an engagement model that suits you the best.
-                            After that, we begin the process of development.</p>
+                        <p>{{__('mycustom.faq33')}}</p>
                     </div>
                 </div>
                 <div class="accordion">
                     <div class="accordion-header">
                         <span>+</span>
-                        <h3>Can you help my current site look more professional?</h3>
+                        <h3>{{__('mycustom.faq4')}}</h3>
                     </div>
                     <div class="accordion-body">
-                        <p>Yes. Give us your requirements and we have experienced expertise to help you give a
-                            new professional look that really wonders!</p>
+                        <p>{{__('mycustom.faq44')}}</p>
                     </div>
                 </div>
                 <div class="accordion">
                     <div class="accordion-header">
                         <span>+</span>
-                        <h3>When do I pay?</h3>
+                        <h3>{{__('mycustom.faq5')}}</h3>
                     </div>
                     <div class="accordion-body">
-                        <p>For most projects, equal payments are made at the start, midway, and the end of the project, but we can work with you to set up a schedule that meets your needs.
-                            We understand that this is a big investment and want to help you budget for the expense in whatever way possible.
-                            We accept checks, PayPal, and all major credit cards.</p>
+                        <p>{{__('mycustom.faq55')}}</p>
                     </div>
                 </div>
             </div>

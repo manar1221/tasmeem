@@ -63,10 +63,10 @@
             <div class="form-lcontainer sign-in">
                 <form method="post" action="{{ route('login') }}">
                     @csrf
-                    <h1>Sign In</h1>
+                    <h1>{{__('mycustom.SignIn')}}</h1>
                     <input type="email" placeholder="Email" required="" name="email" :value="old('email')" required autofocus>
                     <input type="password" name="password" placeholder="Password" required autocomplete="current=password">
-                    <button type="submit" name="login">Sign In</button>
+                    <button type="submit" name="login">{{__('mycustom.SignIn')}}</button>
                 </form>
             </div>
 
@@ -79,9 +79,9 @@
                     </div> --}}
 
                     <div class="toggle-panel toggle-right">
-                        <h1>Hello, Friend!</h1>
-                        <p>Register with your personal details to use all of site features</p>
-                        <a href="{{ route('register') }}"><button class="hidden" id="register">Sign Up</button></a>
+                        <h1>{{__('mycustom.HelloFriend')}}</h1>
+                        <p>{{__('mycustom.SignIn1')}}</p>
+                        <a href="{{ route('register') }}"><button class="hidden" id="register">{{__('mycustom.SignUp')}}</button></a>
                     </div>
                 </div>
             </div>
