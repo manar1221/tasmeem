@@ -17,6 +17,7 @@ use App\Http\Livewire\BlogComponent;
 use App\Http\Livewire\BolgComponent;
 use App\Http\Livewire\BrandingComponent;
 use App\Http\Livewire\CourcesComponent;
+use App\Http\Livewire\DetailsComponent;
 use App\Http\Livewire\GalleryComponent;
 use App\Http\Livewire\HomeComponent;
 use App\Http\Livewire\LogoComponent;
@@ -59,6 +60,8 @@ Route::get('languageConverter/{locale}',function($locale){
 Route::get('/', HomeComponent::class )->name('home.index');
 
 Route::get('/store', StoreComponent::class )->name('store');
+
+Route::get('/product/{id}',DetailsComponent::class)->name('product.details');
 
 Route::get('/gallery', GalleryComponent::class )->name('gallery');
 

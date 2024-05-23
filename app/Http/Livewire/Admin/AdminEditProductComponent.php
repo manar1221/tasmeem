@@ -61,55 +61,26 @@ class AdminEditProductComponent extends Component
         $product->price = $this->price;
 
         if ($this->newimage) {
-            unlink('assets/images/products/' . $product->image);
-            $imageName = Carbon::now()->timestamp . '.' . $this->newimage->extension();
+            if ($product->image) {
+                unlink('assets/images/products/' . $product->image);
+            }
+            $imageName = $this->newimage->getClientOriginalName();
             $this->newimage->storeAs('products', $imageName);
             $product->image = $imageName;
         }
 
-        if ($this->newimage1) {
-            if ($this->image1) {
-                unlink('assets/images/products/' . $product->image1);
-            }
-            $image1Name = Carbon::now()->timestamp . '.' . $this->newimage1->extension();
-            $this->newimage1->storeAs('products', $image1Name);
-            $product->image1 = $image1Name;
-        }
+        for ($i = 1; $i <= 5; $i++) {
+            $propertyName = "image$i";
+            $newImageProperty = "newimage$i";
 
-        if ($this->newimage2) {
-            if ($this->image2) {
-                unlink('assets/images/products/' . $product->image2);
+            if ($this->{$newImageProperty}) {
+                if ($product->{$propertyName}) {
+                    unlink('assets/images/products/' . $product->{$propertyName});
+                }
+                $imageName = $this->{$newImageProperty}->getClientOriginalName();
+                $this->{$newImageProperty}->storeAs('products', $imageName);
+                $product->{$propertyName} = $imageName;
             }
-            $image2Name = Carbon::now()->timestamp . '.' . $this->newimage2->extension();
-            $this->newimage2->storeAs('products', $image2Name);
-            $product->image2 = $image2Name;
-        }
-
-        if ($this->newimage3) {
-            if ($this->image3) {
-                unlink('assets/images/products/' . $product->image3);
-            }
-            $image3Name = Carbon::now()->timestamp . '.' . $this->newimage3->extension();
-            $this->newimage3->storeAs('products', $image3Name);
-            $product->image3 = $image3Name;
-        }
-
-        if ($this->newimage4) {
-            if ($this->image4) {
-                unlink('assets/images/products/' . $product->image4);
-            }
-            $image4Name = Carbon::now()->timestamp . '.' . $this->newimage4->extension();
-            $this->newimage4->storeAs('products', $image4Name);
-            $product->image4 = $image4Name;
-        }
-
-        if ($this->newimage5) {
-            if ($this->image5) {
-                unlink('assets/images/products/' . $product->image5);
-            }
-            $image5Name = Carbon::now()->timestamp . '.' . $this->newimage5->extension();
-            $this->newimage5->storeAs('products', $image5Name);
-            $product->image5 = $image5Name;
         }
 
         $product->category_id = $this->category_id;

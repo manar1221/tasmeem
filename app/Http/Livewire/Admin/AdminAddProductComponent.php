@@ -35,38 +35,17 @@ class AdminAddProductComponent extends Component
         $product->description =$this->description ;
         $product->price =$this->price ;
 
-        $imageName = Carbon::now()->timestamp.'.'.$this->image->extension();
+        $imageName = $this->image->getClientOriginalName();
         $this->image->storeAs('products',$imageName);
         $product->image =$imageName;
 
-        if ($this->image1) {
-            $image1Name = Carbon::now()->timestamp . '.' . $this->image1->extension();
-            $this->image1->storeAs('products', $image1Name);
-            $product->image1 = $image1Name;
-        }
-
-        if ($this->image2) {
-            $image2Name = Carbon::now()->timestamp . '.' . $this->image2->extension();
-            $this->image2->storeAs('products', $image2Name);
-            $product->image2 = $image2Name;
-        }
-
-        if ($this->image3) {
-            $image3Name = Carbon::now()->timestamp . '.' . $this->image3->extension();
-            $this->image3->storeAs('products', $image3Name);
-            $product->image3 = $image3Name;
-        }
-
-        if ($this->image4) {
-            $image4Name = Carbon::now()->timestamp . '.' . $this->image4->extension();
-            $this->image4->storeAs('products', $image4Name);
-            $product->image4 = $image4Name;
-        }
-
-        if ($this->image5) {
-            $image5Name = Carbon::now()->timestamp . '.' . $this->image5->extension();
-            $this->image5->storeAs('products', $image5Name);
-            $product->image5 = $image5Name;
+        $additionalImages = [$this->image1, $this->image2, $this->image3, $this->image4, $this->image5];
+        foreach ($additionalImages as $index => $image) {
+            if ($image) {
+                $imageName = $image->getClientOriginalName(); // Get the original name of the image
+                $image->storeAs('products', $imageName);
+                $product->{"image" . ($index + 1)} = $imageName;
+            }
         }
 
         $product->category_id =$this->category_id ;
