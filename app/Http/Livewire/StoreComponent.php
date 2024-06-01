@@ -10,7 +10,7 @@ class StoreComponent extends Component
 {
     public function render()
     {
-        $products = Product::paginate(12);
+        $products = Product::paginate(200);
         $categories = Category::orderBy('name','ASC')->get();
         return view('livewire.store-component', ['products' => $products,'categories'=>$categories]);
     }

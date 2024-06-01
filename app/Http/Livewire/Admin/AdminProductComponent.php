@@ -12,16 +12,29 @@ class AdminProductComponent extends Component
     public $product_id;
 
     public function deleteproduct()
-    {
-        $product = Product::find($this->product_id);
-        unlink('images/products/'.$product->image);
+{
+    $product = Product::find($this->product_id);
+
+    if ($product) {
+        $imagePath = 'images/products/' . $product->image;
+
+        if (file_exists($imagePath)) {
+            unlink($imagePath);
+        } else {
+            session()->flash('message', 'الملف غير موجود');
+        }
+
         $product->delete();
-        session()->flash('message',' تم حذف المنتج بنجاح ');
+        session()->flash('message', 'تم حذف المنتج بنجاح');
+
+    } else {
+        session()->flash('message', 'المنتج غير موجود');
     }
+}
 
     public function render()
     {
-        $products = Product::orderBy('created_at','DESC')->paginate(150);
+        $products = Product::orderBy('created_at','DESC')->paginate(200);
         return view('livewire.admin.admin-product-component',['products'=>$products]);
     }
 }

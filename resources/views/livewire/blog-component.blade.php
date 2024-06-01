@@ -10,10 +10,10 @@
                     <img src="{{ asset('assets/images/blogs')}}/{{$blog->image}}" alt="">
                 </div>
                 <div class="content">
-                    <a href="#" class="title">{{ $blog->name }}</a>
+                    <a href="{{route('blog.details',['id'=>$blog->id])}}" class="title">{{ $blog->name }}</a>
                     <span>{{ $blog->created_at}}</span>
                     <p>{{ $blog->short_description}}</p>
-                    <a href="#" class="btn fs-3">{{__('mycustom.readmore')}}</a>
+                    <a href="{{route('blog.details',['id'=>$blog->id])}}" class="btn fs-3">{{__('mycustom.readmore')}}</a>
                 </div>
             </div>
         @endforeach

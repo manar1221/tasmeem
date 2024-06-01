@@ -17,7 +17,7 @@
                 @foreach ($products as $product)
                     <div class = "col-md-6 col-lg-4 col-xl-3 p-2 prand">
                         <div class = "collection-img position-relative">
-                            <a href="product_details.html" target="" rel="noopener noreferrer">
+                            <a href="{{route('product.details',['id'=>$product->id])}}" target="" rel="noopener noreferrer">
                                 <img src = "{{ asset('assets/images/products')}}/{{$product->image}}" class = "w-100">
                             </a>
                             <span class = "position-absolute text-white d-flex align-items-center justify-content-center fs-4" style="background-color: #903EB4;">sale</span>

@@ -9,7 +9,7 @@ class BlogComponent extends Component
 {
     public function render()
     {
-        $blogs = Blog::paginate(12);
+        $blogs = Blog::paginate(120);
         return view('livewire.blog-component', ['blogs' => $blogs]);
     }
 }

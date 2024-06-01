@@ -180,7 +180,7 @@
         </div>
     </section>
 
-    <section class="team" style="margin-top: 7rem;">
+    {{-- <section class="team" style="margin-top: 7rem;">
       <h1 class="heading" style="margin-top: -1.5rem;" id="team">{{__('mycustom.priceplans')}}</h1>
       <p></p>
       <div class="row">
@@ -222,7 +222,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section id="contact" class="contact">
       <h1 class="heading">{{__('mycustom.getintouch')}}</h1>

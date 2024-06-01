@@ -14,6 +14,7 @@ use App\Http\Livewire\Admin\AdminEditProductComponent;
 use App\Http\Livewire\Admin\AdminProductComponent;
 use App\Http\Livewire\AdminComponent;
 use App\Http\Livewire\BlogComponent;
+use App\Http\Livewire\BlogDetailsComponent;
 use App\Http\Livewire\BolgComponent;
 use App\Http\Livewire\BrandingComponent;
 use App\Http\Livewire\CourcesComponent;
@@ -63,9 +64,13 @@ Route::get('/store', StoreComponent::class )->name('store');
 
 Route::get('/product/{id}',DetailsComponent::class)->name('product.details');
 
+Route::get('/product-category/{id}',\App\Http\Livewire\CategoryComponent::class)->name('product.category');
+
 Route::get('/gallery', GalleryComponent::class )->name('gallery');
 
 Route::get('/blog', BlogComponent::class )->name('blog');
+
+Route::get('/blog/{id}',BlogDetailsComponent::class)->name('blog.details');
 
 Route::get('/cources', CourcesComponent::class )->name('cources');
 
@@ -90,8 +95,6 @@ Route::get('/admin/categories',AdminCategoriesComponent::class)->name('admin.cat
 Route::get('/admin/category/add',AdminAddCategoriesComponent::class)->name('admin.category.add');
 
 Route::get('/admin/category/edit/{category_id}',AdminEditCategoriesComponent::class)->name('admin.category.edit');
-
-Route::get('/product-category/{id}',\App\Http\Livewire\CategoryComponent::class)->name('product.category');
 
 // proucts
 Route::get('/admin/products',AdminProductComponent::class)->name('admin.products');

@@ -35,7 +35,7 @@
                 <ul>
                     <li><a href="/">{{__('mycustom.home')}}</a></li>
                     <li><a href="{{route('store')}}">{{__('mycustom.shop')}}</a></li>
-                    <li><a href="{{route('gallery')}}">{{__('mycustom.Gallery')}}</a></li>
+                    {{-- <li><a href="{{route('gallery')}}">{{__('mycustom.Gallery')}}</a></li> --}}
                     <li><a href="{{route('blog')}}">{{__('mycustom.blogs')}}</a></li>
                     <li><a href="{{route('cources')}}">{{__('mycustom.cources')}}</a></li>
                     @auth

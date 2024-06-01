@@ -1,5 +1,5 @@
 <!-- Details -->
-<div class=" py-5">
+<div class="py-5">
     <div class="container card">
         <div class="container-fliud">
             <div class="wrapper row">
@@ -29,8 +29,8 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
-                        <!-- </div>
-                        <span class="review-no">41 reviews</span> -->
+                        </div>
+                        <!-- <span class="review-no">41 reviews</span> -->
                     </div>
                     <p class="product-description mt-3" style="font-size: large !important; line-height: 1.5;">{{$product->description}}</p>
                     <h4 class="price">Current Price: <span>${{$product->price}}</span></h4>
